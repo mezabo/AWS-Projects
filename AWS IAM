@@ -1,1 +1,15 @@
-This code defines an AWS IAM policy that allows getting and listing objects in S3 buckets and S3 Object Lambda, with permissions applied to all resources in the account.
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3-object-lambda:Get*",
+                "s3-object-lambda:List*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
